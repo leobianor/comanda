@@ -9,19 +9,21 @@ import { useEffect } from 'react';
 
 
 
-export default function Produtos() {
+export default function Produtos({navigation}) {
     const [produtos, setProdutos] = useState([])
 
-    useEffect( () => {
+    useEffect(() => {
         axios.get("http://localhost:3000/produtos")
             .then(resp => setProdutos(resp.data))
 
-    }, [] )
+    }, [])
 
     return (
         <View style={styles.containerBetween}>
             <View style={styles.header}>
-                <MaterialIcons name="arrow-back" size={24} color="black" />
+                <TouchableOpacity>
+                    <MaterialIcons name="arrow-back" size={24} color="black" onPress={() => navigation.navigate('Comanda')} />
+                </TouchableOpacity>
 
                 <View style={styles.box}>
                     <Text>comanda</Text>

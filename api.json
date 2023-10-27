@@ -30,5 +30,19 @@
             "imagePath": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kzXNUCF7/200/200/original?country=br",
             "preco": 27.90
         }
+    ],
+    "usuarios":[
+        {
+            "id":"1",
+            "nome": "Leonardo Bianor",
+            "email":"leobianor@outlook.com",
+            "senha":"1234"
+        },
+        {
+            "id":"2",
+            "nome": "Paula Machado",
+            "email":"paulamachado@outlook.com",
+            "senha":"4567"
+        }
     ]
 }
